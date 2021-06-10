@@ -1,0 +1,307 @@
+<!DOCTYPE html> <!-- 22061081_윤주율 -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>About Me</title>
+    <style>
+      body{
+          background-color:  #000000;
+      }
+      .wrap{
+          min-width: 800px;
+          max-width: 1600px;
+          margin: 0px auto;
+      }
+      header{
+          background-color : #000000;
+          color: white;
+          padding: 0px 50px;
+      }
+      header h1{
+          margin: 5px 0px;
+          font-size:24px;
+      }
+      header ul{
+          padding: 0px;
+      }
+      header ul li{
+          list-style: none;
+          float:left;
+          padding: 0px 20px;
+      }
+      /* :link, :visited, :hover, :active, :focus */
+      a{ color: #ffffff; }
+      a:hover{ color: rgb(255, 98, 98); }
+
+      .anchor{
+          color: black;
+
+      }
+
+      .float_left{
+          float:left;
+      }
+      .float_right{
+          float:right;
+      }
+      .float_center{
+        float:center;
+      }
+      .float_right ul li a{
+          text-decoration: none;
+      }
+      .clearfix::after{
+          content: ""; /* 브라우저 호환성 문제해결 */
+          clear: both; /* float 종료 */
+          display: table; /* 브라우저 호환성 문제해결 */
+      }
+      .yeah {
+        padding-right: 630px;
+        padding-top: 100px;
+      }
+      header #main_menu {
+        height:50px;
+        margin-top:50px;
+        background-color:#4e4c4d;
+      }
+      header #main_menu ul {
+        width:990px;
+        margin:auto;
+        padding-top:11px;
+        text-align: center;
+      }
+      header #main_menu li {
+        display:inline;
+        margin:0 45px;
+        font-size: 20px;
+      }
+      #main_visual{
+          background-image: url("./img/map.jpg");
+          background-repeat: no-repeat;
+          background-position: 50% 50%; /* x가로, y세로 */
+          background-size: 50% auto;
+          color: white;
+          text-align: center;
+          padding: 300px 100px 50px 0px;
+          margin: -10px;
+      }
+      h2 {
+        color: white;
+        text-align: center;
+        padding-top: 100px;
+        font-size: 70px;
+        margin: 0px;
+        font-family: 나눔스퀘어;
+        padding-bottom: 100px;
+      }
+      h3 {
+        color: white;
+        padding-left: 10px;
+        padding-top: 100px;
+      }
+      section{
+          text-align: center;
+          background-color : black;
+          margin: 0px;
+          padding: 0px 0px;
+      }
+      section h3{
+          color: white;
+          font-weight: bold;
+          font-size: 25px;
+          margin: 50px 0px;
+      }
+      section h4 {
+        text-align: left;
+        padding-left: 650px;
+      }
+      section p{
+          color: gray;
+          font-weight: bold;
+          font-size: 17px;
+      }
+      .content section{
+          padding: 20px;
+      }
+      .content section:nth-child(1){
+          background-color: black;
+      }
+      .content section:nth-child(2){
+          background-color: black;
+      }
+
+      .content section h3{
+          color: white;
+      }
+      .content section div{
+          width: 1000px;
+          margin: 0px auto; /*좌우 여백 자동*/
+      }
+      .content .content_part{
+          float: left;
+          width: 480px;
+          margin: 0px 10px;
+      }
+      .content_part dt{
+          color: white;
+          font-weight: bold;
+          margin: 10px 0px;
+      }
+      .content_part dd{
+        color: white;
+          margin: 0px;
+      }
+      .content section{
+          padding: 50px;
+      }
+      .content section:nth-child(1){
+          background-color: black;
+      }
+      .content section h3{
+          font-size: 25px;
+          color:  white;
+      }
+      .content section div{
+          width: 1000px;
+          margin: 0px auto; /*좌우 여백 자동*/
+      }
+      .content .content_part{
+          float: left;
+          width: 480px;
+          margin: 0px 10px;
+      }
+      .content_part dt{
+          color: rgb(202, 202, 202);
+          font-weight: bold;
+          margin: 10px 0px;
+      }
+      .content_part dd{
+          color: gray;
+          margin: 0px;
+      }
+      form{
+          text-align: center;
+      }
+      .formm{
+          text-align: center;
+          width: 600px;
+          height: 400px;
+          background-color: black;
+          color: white;
+          padding-bottom: 100px;
+          padding-top: 200px;
+          margin: 0px auto;
+      }
+      .login{
+          padding: 30px;
+      }
+      footer{
+          background-color: #000000;
+          color: #ffffff;
+          padding-top: 100px;
+      }
+      footer ul{
+          margin: 10px;
+          padding: 10px;
+      }
+      footer div p{
+          margin-left: 15px;
+      }
+      footer ul li{
+          list-style: none;
+          float: left;
+          padding: 0px 10px;
+      }
+      #footer_left li{
+          border-right: solid 1px gray;
+      }
+      #footer_left li:last-child{
+          border: none;
+      }
+
+    </style>
+  </head>
+  <body>
+        <header class="clearfix">
+            <!-- div(block형), span(inline형) 의미없이 공간분할 -->
+        <div>
+            <h1 class="float_left"><a href="d1.html">YJY</a></h1>
+            <nav class="float_right">
+                <ul class="clearfix">
+                  <li><a href="a.html">About Me</a></li>
+                  <li><a href="b.html">Educational</a></li>
+                  <li><a href="c.html">Think&Talk</a></li>
+                  <li><a href="d.html">Get In Touch</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <h2> Get In Touch </h2>
+
+        <div id="main_visual">
+        </div>
+        <section>
+        <h4>Address : 서울시 무지개구 번개동 천둥아파트 101동 1234호, 10101 <br>
+            Number : 010-1234-1234 <br>
+            Fax Num : 1111111-11</h4>
+        <div class="yeah">
+          <nav class="float_right">
+            <ul class="clearfix">
+              <li><a href="https://www.facebook.com/">♥Facebook♥</a></li>
+              <li><a href="https://www.instagram.com/">♡Instagram♡</a></li>
+              <li><a href="https://www.twitter.com/">♥Twitter♥</a></li>
+              <li><a href="https://www.kakaocorp.com/service/KakaoTalk">♡Kakaotalk♡</a></li>
+            </ul>
+        </nav>
+        </div>
+        <div class="formm">
+            <h4 class="login">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              &nbsp;&nbsp;직접 연락을 위해서는 로그인을 해주세요</h4>
+            <form>
+                <label for="text_1">아이디</label>
+                <input name="text_1" type="text" placeholder="아이디는영문만" value="윤주율" />
+                <label for="pass_1">패스워드</label>
+                <input name="pass_1" type="password" placeholder="영문숫자혼합" value="1234" />
+                <br />
+                <h5>개인정보 활용에 동의하시나요?</h5>
+                <h6>예, 아니오</h6>
+                <input name="radio_1" type="radio" value="1" checked />
+                <input name="radio_1" type="radio" value="2" />
+
+                <h5>사이트 이동</h5>
+
+                <select> <!-- select box, combo box -->
+                    <option>윤주율 포트폴리오</option> <!-- 선택지 -->
+                    <option>윤주율 친구들</option>
+                    <option>윤주율 가족들</option>
+                </select>
+
+                <h5>현재 이 페이지에 대한 만족도</h5>
+
+                <select> <!-- select box, combo box -->
+                    <option>1</option> <!-- 선택지 -->
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+        </div>
+          <footer class="clearfix">
+              <div class="float_left footer_part">
+                  <ul id="footer_left" class="clearfix">
+                    <li>About Me</li>
+                    <li>Educational</li>
+                    <li>Think&Talk</li>
+                    <li>Get In Touch</li>
+                  </ul>
+                  <p>
+                      ⓒ 2020 Kaywon University Digital Media Design Yoon Juyul. All Right Reserved
+                  </p>
+                  <p>
+                      the icons and images in the design are the property of their respective owners/copyright holders.
+
+                  </p>
+              </div>
+          </footer>
+  </body>
+</html>

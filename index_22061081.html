@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>INDEX</title>
+        <meta charset="utf-8" />
+        <style>
+            body{
+                background-color:  rgb(0, 0, 0);
+            }
+            .wrap{
+                min-width: 800px;
+                max-width: 1600px;
+                margin: 0px auto;
+            }
+            header{
+                background-color : rgb(0, 0, 0);
+                color: white;
+                padding: 0px 50px;
+            }
+            header h1{
+                margin: 5px 0px;
+                font-size:24px;
+            }
+            header ul{
+                padding: 0px;
+            }
+            header ul li{
+                list-style: none;
+                float:left;
+                padding: 0px 20px;
+            }
+
+            /* :link, :visited, :hover, :active, :focus */
+            a{ color: rgb(230, 230, 230); }
+            a:hover{ color: rgb(255, 98, 98); }
+
+            .anchor{
+                color: black;
+
+            }
+
+            .float_left{
+                float:left;
+            }
+            .float_right{
+                float:right;
+            }
+            .float_right ul li a{
+                text-decoration: none;
+            }
+            .clearfix::after{
+                content: ""; /* 브라우저 호환성 문제해결 */
+                clear: both; /* float 종료 */
+                display: table; /* 브라우저 호환성 문제해결 */
+            }
+            #main_visual{
+                background-image: url("img/bgz.jpg");
+                background-repeat: no-repeat;
+                background-position: 50% 50%; /* x가로, y세로 */
+                background-size: 100% auto;
+                color: rgb(255, 255, 255);
+                text-align: center; /* 글씨 가운데 정렬 */
+                padding: 300px;
+            }
+            #main_visual p{
+                width: 800px;
+                margin: 20px auto; /* 상하 좌우 */
+            }
+            #main_visual h2{
+                width: 800px;
+                margin: 0px auto; /* 상하 좌우 */
+                font-size: 39px;
+                letter-spacing: 20px;
+            }
+            .narration_p{
+                font-size: 25px;
+                letter-spacing: 7px;
+            }
+            .author_p{
+                font-size: 15px;
+                letter-spacing: 4px;
+            }
+            footer{
+                background-color: rgb(0, 0, 0);
+                color: #aaa;
+                padding-top: 100px;
+            }
+            footer ul{
+                margin: 10px;
+                padding: 10px;
+            }
+            footer div p{
+                margin-left: 15px;
+            }
+            footer ul li{
+                list-style: none;
+                float: left;
+                padding: 0px 10px;
+            }
+            #footer_left li{
+                border-right: solid 1px gray;
+            }
+            #footer_left li:last-child{
+                border: none;
+            }
+        </style>
+        <body>
+            <div>
+                <header class="clearfix">
+                    <!-- div(block형), span(inline형) 의미없이 공간분할 -->
+                    <h1 class="float_left">Sabon & Seoul Namsan</h1>
+                    <nav class="float_right">
+                        <ul class="clearfix">
+                            <li><a href="az.html">Sabon1</a></li>
+                            <li><a href="bz.html">Sabon2</a></li>
+                            <li><a href="cz.html">사이사이</a></li>
+                            <li><a href="dz.html">크기와 무게</a></li>
+                            <li><a href="ez.html">서울남산체1</a></li>
+                            <li><a href="fz.html">서울남산체2</a></li>
+                            <li><a href="gz.html">사이사이</a></li>
+                            <li><a href="hz.html">크기와 무게</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <div id="main_visual">
+                    <p class="narration_p">
+                        KAYWON ART & DESIGN, <br />
+                        DIGITAL MEDIA DESIGN <br />
+                    </p>
+                    <h2>
+                        YOON JU YUL
+                    </h2>
+                    <p class="author_p">
+                        2-B, visual communication.
+                    </p>
+                </div>
+            </div>
+
+        </body>
+        <footer class="clearfix">
+            <div class="float_left footer_part">
+                <ul id="footer_left" class="clearfix">
+                    <li>Sabon1</li>
+                    <li>Sabon2</li>
+                    <li>자간과 행간</li>
+                    <li>크기와 무게</li>
+                    <li>서울남산체1</li>
+                    <li>서울남산체2</li>
+                    <li>자간과 행간</li>
+                    <li>크기와 무게</li>
+                </ul>
+                <p>
+                    ⓒ 2020 Kaywon University Digital Media Design Yoon Juyul. All Right Reserved
+                </p>
+                <p>
+                    the icons and images in the design are the property of their respective owners/copyright holders.
+
+                </p>
+            </div>
+        </footer>
+    </head>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html> <!-- 22061081_윤주율 -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>About Me</title>
+    <style>
+      body{
+          background-color:  #000000;
+      }
+      .wrap{
+          min-width: 800px;
+          max-width: 1600px;
+          margin: 0px auto;
+      }
+      header{
+          background-color : #000000;
+          color: white;
+          padding: 0px 50px;
+      }
+      header h1{
+          margin: 5px 0px;
+          font-size:24px;
+      }
+      header ul{
+          padding: 0px;
+      }
+      header ul li{
+          list-style: none;
+          float:left;
+          padding: 0px 20px;
+      }
+      /* :link, :visited, :hover, :active, :focus */
+      a{ color: #ffffff; }
+      a:hover{ color: rgb(255, 98, 98); }
+
+      .anchor{
+          color: black;
+
+      }
+
+      .float_left{
+          float:left;
+      }
+      .float_right{
+          float:right;
+      }
+      .float_center{
+        float:center;
+      }
+      .float_right ul li a{
+          text-decoration: none;
+      }
+      .clearfix::after{
+          content: ""; /* 브라우저 호환성 문제해결 */
+          clear: both; /* float 종료 */
+          display: table; /* 브라우저 호환성 문제해결 */
+      }
+      header #main_menu {
+        height:50px;
+        margin-top:50px;
+        background-color:#4e4c4d;
+      }
+      header #main_menu ul {
+        width:990px;
+        margin:auto;
+        padding-top:11px;
+        text-align: center;
+      }
+      header #main_menu li {
+        display:inline;
+        margin:0 115px;
+        font-size: 20px;
+      }
+      h2 {
+        color: white;
+        text-align: center;
+        padding-top: 100px;
+        font-size: 70px;
+        margin: 0px;
+        font-family: 나눔스퀘어;
+      }
+      section{
+          text-align: center;
+      }
+      section img {
+        padding-top: 100px;
+      }
+      section p{
+        padding-top: 100px;
+        padding-bottom: 100px;
+          color: gray;
+          text-align: center;
+      }
+      #about_ul{
+          padding: 0px;
+      }
+      #about_ul li{
+          float: left;
+          list-style: none;
+          width: calc(25% - 1px - 20px - 20px); /* 1/4=25% */
+          /* 가로 배치, 넓이 1/4 = 가로로 4개 배치 */
+          border-right: solid 1px gray;
+          padding:20px;
+          color: white;
+      }
+      #about_ul li:last-child{
+          border: none;
+      }
+      #about_ul dl dt{
+        font-size: 15pt;
+      }
+      #about_ul dl dd{
+          margin: 0px;
+      }
+
+      footer{
+          background-color: #000000;
+          color: #ffffff;
+          padding-top: 100px;
+      }
+      footer ul{
+          margin: 10px;
+          padding: 10px;
+      }
+      footer div p{
+          margin-left: 15px;
+      }
+      footer ul li{
+          list-style: none;
+          float: left;
+          padding: 0px 10px;
+      }
+      #footer_left li{
+          border-right: solid 1px gray;
+      }
+      #footer_left li:last-child{
+          border: none;
+      }
+    </style>
+  </head>
+  <body>
+        <header class="clearfix">
+            <!-- div(block형), span(inline형) 의미없이 공간분할 -->
+        <div>
+            <h1 class="float_left"><a href="d1.html">YJY</a></h1>
+            <nav class="float_right">
+                <ul class="clearfix">
+                  <li><a href="a.html">About Me</a></li>
+                  <li><a href="b.html">Educational</a></li>
+                  <li><a href="c.html">Think&Talk</a></li>
+                  <li><a href="d.html">Get In Touch</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <h2> About Me </h2>
+        <nav id="main_menu">
+            <ul>
+              <li><a href="a.html">Profile</a></li>
+              <li><a href="e.html">Like</a></li>
+              <li><a href="f.html">Gallery</a></li>
+            </ul>
+        </nav>
+      </header>
+      <section>
+        <img src="./img/me1.jpg">
+          <p>
+              윤주율은 2001년 4월 17일에 막내딸로 태어났다. 지금은 2021년 기준 21살이고, <br>
+              57cm였던 키가 167cm까지 컸다. 특기는 검도와 영어, 중국어이고 취미는 웹툰과 <br>
+              영화를 보는 것이다. 추억의 드라마를 보는 것도 좋아한다. 성격은 털털한 편이고 <br>
+              솔직하며 사람과 교류하는 것을 좋아한다. 요즘 유행하는 mbti는 ENTP/ENTJ이다.
+          </p>
+          <ul id="about_ul" class="clearfix">
+              <li>
+                  <img src="img/icon1.jpg" />
+                  <dl>
+                      <dt>이름</dt>
+                      <dd><br><br>윤주율이라는 이름은 아빠가 직접 지으신 이름이다.
+                        기둥 주 柱, 법 율 律 자를 쓰며, 법의 기둥이 되라는 의미를 가진다.
+                        하지만 원주율과 비슷해 어렸을 적부터 별명이 원주율 파이였다.
+                      </dd>
+                  </dl>
+              </li>
+              <li>
+                  <img src="img/icon1.jpg" />
+                  <dl>
+                      <dt>ENTP/ENTJ</dt>
+                      <dd><br><br>리더 / 토론가 형인데, 외향적이고 나무보다 숲을 보는 경향,
+                        감정적이기 보다는 이성적인 면, 그리고 즉흥적이면서도 계획적인 성향이
+                        담겨있다. 우리나라 여자 중에 흔한 성격은 아니라고 한다.
+                      </dd>
+                  </dl>
+              </li>
+              <li>
+                  <img src="img/icon1.jpg" />
+                  <dl>
+                      <dt>검도</dt>
+                      <dd><br><br>초등학교 2학년때부터 약 10년간 꾸준히 한 운동인 검도.
+                        학생 때 딸 수 있는 가장 높은 단인 2단을 고등학생때 취득했고
+                        송파구청장기대회와 서울시대회에서 각각 금메달, 동메달을 딴 전적이 있다.
+                      </dd>
+                  </dl>
+              </li>
+              <li>
+                  <img src="img/icon1.jpg" />
+                  <dl>
+                      <dt>외국어 능력</dt>
+                      <dd><br><br>어렸을 적부터 유학을 자주 다닌 나는 자연스럽게 영어와 중국어를 익혔고
+                        어린시절에 배웠기 때문에 그 감이 떨어지지 않도록 틈틈히 방학 때마다
+                        외국에 어학연수를 가서 공부를 했다. 언어 자격증 공부도 하고있다.
+                      </dd>
+                  </dl>
+              </li>
+          </ul>
+      </section>
+        <img src="./img/timeline.jpg">
+            <footer class="clearfix">
+                <div class="float_left footer_part">
+                    <ul id="footer_left" class="clearfix">
+                      <li>About Me</li>
+                      <li>Educational</li>
+                      <li>Think&Talk</li>
+                      <li>Get In Touch</li>
+                    </ul>
+                    <p>
+                        ⓒ 2020 Kaywon University Digital Media Design Yoon Juyul. All Right Reserved
+                    </p>
+                    <p>
+                        the icons and images in the design are the property of their respective owners/copyright holders.
+
+                    </p>
+                </div>
+            </footer>
+  </body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html> <!-- 22061081_윤주율 -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>About Me</title>
+    <style>
+      body{
+          background-color:  #000000;
+      }
+      .wrap{
+          min-width: 800px;
+          max-width: 1600px;
+          margin: 0px auto;
+      }
+      header{
+          background-color : #000000;
+          color: white;
+          padding: 0px 50px;
+      }
+      header h1{
+          margin: 5px 0px;
+          font-size:24px;
+      }
+      header ul{
+          padding: 0px;
+      }
+      header ul li{
+          list-style: none;
+          float:left;
+          padding: 0px 20px;
+      }
+      /* :link, :visited, :hover, :active, :focus */
+      a{ color: #ffffff; }
+      a:hover{ color: rgb(255, 98, 98); }
+
+      .anchor{
+          color: black;
+
+      }
+
+      .float_left{
+          float:left;
+      }
+      .float_right{
+          float:right;
+      }
+      .float_center{
+        float:center;
+      }
+      .float_right ul li a{
+          text-decoration: none;
+      }
+      .clearfix::after{
+          content: ""; /* 브라우저 호환성 문제해결 */
+          clear: both; /* float 종료 */
+          display: table; /* 브라우저 호환성 문제해결 */
+      }
+      header #main_menu {
+        height:50px;
+        margin-top:50px;
+        background-color:#4e4c4d;
+      }
+      header #main_menu ul {
+        width:990px;
+        margin:auto;
+        padding-top:11px;
+        text-align: center;
+      }
+      header #main_menu li {
+        display:inline;
+        margin:0 45px;
+        font-size: 20px;
+      }
+      h2 {
+        color: white;
+        text-align: center;
+        padding-top: 100px;
+        font-size: 70px;
+        margin: 0px;
+        font-family: 나눔스퀘어;
+      }
+      h3 {
+        color: white;
+        padding-left: 10px;
+        padding-top: 100px;
+      }
+      .content section{
+          padding: 20px;
+      }
+      .content section:nth-child(1){
+          background-color: black;
+      }
+      .content section:nth-child(2){
+          background-color: black;
+      }
+      }
+      .content section h3{
+          color: white;
+      }
+      .content section div{
+          width: 1000px;
+          margin: 0px auto; /*좌우 여백 자동*/
+      }
+      .content .content_part{
+          float: left;
+          width: 480px;
+          margin: 0px 10px;
+      }
+      .content_part dt{
+          color: white;
+          font-weight: bold;
+          margin: 10px 0px;
+      }
+      .content_part dd{
+        color: white;
+          margin: 0px;
+      }
+      footer{
+          background-color: #000000;
+          color: #ffffff;
+          padding-top: 100px;
+      }
+      footer ul{
+          margin: 10px;
+          padding: 10px;
+      }
+      footer div p{
+          margin-left: 15px;
+      }
+      footer ul li{
+          list-style: none;
+          float: left;
+          padding: 0px 10px;
+      }
+      #footer_left li{
+          border-right: solid 1px gray;
+      }
+      #footer_left li:last-child{
+          border: none;
+      }
+    </style>
+  </head>
+  <body>
+        <header class="clearfix">
+            <!-- div(block형), span(inline형) 의미없이 공간분할 -->
+        <div>
+            <h1 class="float_left"><a href="d1.html">YJY</a></h1>
+            <nav class="float_right">
+                <ul class="clearfix">
+                  <li><a href="a.html">About Me</a></li>
+                  <li><a href="b.html">Educational</a></li>
+                  <li><a href="c.html">Think&Talk</a></li>
+                  <li><a href="d.html">Get In Touch</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <h2> Educational </h2>
+        <nav id="main_menu">
+            <ul>
+              <li><a href="b.html">유치원</a></li>
+              <li><a href="g.html">초등학교</a></li>
+              <li><a href="h.html">중학교</a></li>
+              <li><a href="i.html">고등학교</a></li>
+              <li><a href="j.html">대학교</a></li>
+            </ul>
+        </nav>
+      </header>
+      <div class="content">
+          <section>
+              <div class="clearfix">
+              <h3>잠신중학교</h3>
+              <div class="content_part">
+                  <img src="./img/k3.png" />
+                  <dl>
+                      <dt>2014~2016</dt>
+                      <dd> 서울특별시 송파구 잠실2동 잠실로 12
+                      </dd>
+                  </dl>
+              </div> <!-- 왼쪽 컨텐츠 -->
+              <div class="content_part">
+                  <img src="./img/k3.png" />
+                  <dl>
+                      <dt>중학교 교3</dt>
+                      <dd>중학교 교복 <br>
+                        중학교 교복이 유난히 기억에 남는다. 너무 이쁘지 않은 디자인이라서 일까.
+                        다른 중학교 친구들이 메뚜기라고 놀렸고 결국 2학년 때부터는 아무리 더워도 동복만 입었다.
+                        동복은 이뻤다.
+                      </dd>
+                  </dl>
+              </div> <!-- 오른쪽 컨텐츠 -->
+            </div>
+          </section>
+
+          <footer class="clearfix">
+              <div class="float_left footer_part">
+                  <ul id="footer_left" class="clearfix">
+                    <li>About Me</li>
+                    <li>Educational</li>
+                    <li>Think&Talk</li>
+                    <li>Get In Touch</li>
+                  </ul>
+                  <p>
+                      ⓒ 2020 Kaywon University Digital Media Design Yoon Juyul. All Right Reserved
+                  </p>
+                  <p>
+                      the icons and images in the design are the property of their respective owners/copyright holders.
+
+                  </p>
+              </div>
+          </footer>
+  </body>
+</html>
